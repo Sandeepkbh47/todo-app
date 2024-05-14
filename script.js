@@ -1,9 +1,10 @@
 const input = document.getElementById('todo-input')
 const todoList = document.getElementById('todo-list')
 
-function addTodo(event) {
+function addTodo(e) {
+
+  e.preventDefault()
   console.log("hgdh")
-  event.preventDefault()
   const newTodo = input.value.trim()
 
   if (newTodo) {
